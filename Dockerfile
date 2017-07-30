@@ -1,4 +1,4 @@
 FROM busybox
 COPY ./redirect /home/
-RUN chmod +x /home/redirect
+RUN chmod 777 /home/redirect
 CMD /home/redirect
