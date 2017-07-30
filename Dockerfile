@@ -1,4 +1,3 @@
-FROM busybox
+FROM alpine
 COPY ./redirect /redirect
-RUN chmod +x /redirect
 CMD ["/redirect"]
