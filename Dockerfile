@@ -1,3 +1,4 @@
-FROM alpine
-COPY ./redirect /redirect
-CMD ["/redirect"]
+FROM busybox
+RUN mkdir /binary
+COPY ./redirect /binary/redirect
+CMD ["/binary/redirect"]
