@@ -1,4 +1,3 @@
 FROM busybox
-RUN mkdir /binary
-COPY ./redirect /binary/redirect
-CMD ["/binary/redirect"]
+COPY ./redirect /home/redirect
+CMD ["/home/redirect"]
